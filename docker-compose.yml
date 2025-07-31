@@ -1,0 +1,29 @@
+
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+       
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    restart: unless-stopped
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    ports:
+      - "8501:8501"
+    depends_on:
+      - app
+    volumes:
+      - .:/app
+    environment:
+      - FASTAPI_URL=http://app:8000
+    restart: unless-stopped
+
