@@ -18,7 +18,7 @@ Prerequisites
 •	Docker and Docker Compose (optional but recommended for deployment)
 Installation
 1.	Clone the repository:
-git clone https://github.com/maryamkhosravii/california-housing-ml-app.git
+git clone https://github.com/maryamkhosravii/california-house-ml-app.git
 cd california-housing-ml-app
 2.	Create and activate a virtual environment:
 python -m venv venv
@@ -45,6 +45,6 @@ Contributions are welcome! Please open an issue or submit a pull request.
  
 **Contact**
 Your Name – mrm.khosravi@yahoo.com
-Project Link: https://github.com/maryamkhosravii/california-housing-ml-app 
+Project Link: https://github.com/maryamkhosravii/california-house-ml-app 
 
 Made with ❤️ by Maryam Khosravi
